@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEMGPT - AI Asistan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Whyte+Inktrap:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sol Sidebar - Sohbet Geçmişi -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="assets/cemgpt.png" alt="CEMGPT" class="logo-image">
+      </div>
+      <div class="sidebar-header">
+        <button class="new-chat-btn">
+          <i class="fas fa-plus"></i>
+          Yeni Sohbet
+        </button>
+      </div>
+      <div class="chat-history" id="chatHistory">
+        <div class="empty-state">
+          <i class="fas fa-comments"></i>
+          <p>Henüz sohbet yok</p>
+          <span>Yeni sohbet başlatın</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Ana İçerik Alanı -->
+    <main class="main-content">
+      <!-- Orta Bölüm - Mikrofon ve Sohbet -->
+      <div class="center-section">
+        <div class="chat-container">
+          <div class="messages-container" id="messages">
+            <div class="welcome-message">
+              <div class="welcome-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h2>Merhaba! Size nasıl yardımcı olabilirim?</h2>
+              <p>Mikrofon butonuna basarak konuşmaya başlayabilirsiniz.</p>
+            </div>
+          </div>
+          
+          <div class="voice-controls">
+            <div class="mic-container">
+              <button id="mic" class="mic-button">
+                <i class="fas fa-microphone"></i>
+              </button>
+              <div class="sound-waves">
+                <div class="wave wave-1"></div>
+                <div class="wave wave-2"></div>
+                <div class="wave wave-3"></div>
+                <div class="wave wave-4"></div>
+                <div class="wave wave-5"></div>
+              </div>
+              <div class="bot-waves bot-not-speaking" id="botWaveContainer">
+                <div class="bot-wave bot-wave-1"></div>
+                <div class="bot-wave bot-wave-2"></div>
+                <div class="bot-wave bot-wave-3"></div>
+                <div class="bot-wave bot-wave-4"></div>
+                <div class="bot-wave bot-wave-5"></div>
+              </div>
+            </div>
+            <p class="mic-status">Mikrofonu başlatmak için tıklayın</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Sağ Sidebar - Transkript -->
+      <aside class="transcript-sidebar">
+        <div class="transcript-header">
+          <h3>
+            <i class="fas fa-file-text"></i>
+            Canlı Transkript
+          </h3>
+          <button class="clear-transcript-btn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+        <div class="transcript-content" id="transcripts">
+          <div class="transcript-placeholder">
+            <i class="fas fa-microphone-slash"></i>
+            <p>Konuşma başladığında transkript burada görünecek</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

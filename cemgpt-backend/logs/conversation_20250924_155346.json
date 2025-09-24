@@ -1,0 +1,14 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "text": " Türkiye Cumhuriyeti kurucusu kimdir?",
+      "timestamp": "2025-09-24T15:54:07.467124"
+    },
+    {
+      "role": "bot",
+      "text": "Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk'tür. 1923 yılında Cumhuriyetin ilanıyla birlikte, Türkiye'nin modernleşme sürecinde önemli reformlar yapmış ve ülkenin temel taşlarını atmıştır. Atatürk, aynı zamanda Türkiye'nin ilk Cumhurbaşkanıdır.",
+      "timestamp": "2025-09-24T15:54:07.475040"
+    }
+  ]
+}
